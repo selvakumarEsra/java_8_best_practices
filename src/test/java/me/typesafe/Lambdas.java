@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 
 public class Lambdas {
 
@@ -26,7 +27,6 @@ public class Lambdas {
         }
     }
 
-
     @Test
     public void ananymousInnerClassUsingJava8(){
         List<String> team = loadTeam();
@@ -34,6 +34,11 @@ public class Lambdas {
         team.forEach(System.out::print);
     }
 
+    @Test
+    public void abstractionUsingLambdaJava8(){
+
+
+    }
 
     private List<String> loadTeam() {
         List<String> team = Lists.newArrayList();
